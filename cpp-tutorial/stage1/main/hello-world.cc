@@ -12,11 +12,16 @@ void print_localtime() {
 }
 
 int main(int argc, char** argv) {
+  long longVar = 32535;
+  char charVar = 0;
   std::string who = "world";
   if (argc > 1) {
     who = argv[1];
   }
+  
+  charVar = longVar;
+  
   std::cout << get_greet(who) << std::endl;
-  print_localtime("Now");
+  print_localtime();
   return 0;
 }
