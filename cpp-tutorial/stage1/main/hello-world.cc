@@ -12,7 +12,7 @@ void print_localtime() {
 }
 
 int main(int argc, char** argv) {
-  long longVar = 32535;
+  long longVar = 0;
   char charVar = 0;
   std::string who = "world";
   if (argc > 1) {
