@@ -4,7 +4,6 @@
 
 std::string get_greet(const std::string& who) {
   return "Hello " + who + " from TIOBE";
-  print_localtime("Now");
 }
 
 void print_localtime() {
@@ -18,6 +17,6 @@ int main(int argc, char** argv) {
     who = argv[1];
   }
   std::cout << get_greet(who) << std::endl;
-  print_localtime();
+  print_localtime("Now");
   return 0;
 }
