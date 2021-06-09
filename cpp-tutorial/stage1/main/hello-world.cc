@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
     who = argv[1];
   }
   
-  y = static_cast<char>(x);
+  y = static_cast(x);
   
   std::cout << get_greet(who) << std::endl;
   print_localtime();
