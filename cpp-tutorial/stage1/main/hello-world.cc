@@ -13,10 +13,14 @@ void print_localtime() {
 }
 
 int main(int argc, char** argv) {
+  int x;
   std::string who = "world";
   if (argc > 1) {
     who = argv[1];
   }
+  
+  x = x++ + x++;
+  
   std::cout << get_greet(who) << std::endl;
   print_localtime();
   return 0;
