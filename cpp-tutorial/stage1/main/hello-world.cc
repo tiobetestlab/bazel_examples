@@ -14,6 +14,8 @@ void print_localtime() {
 
 int main(int argc, char** argv) {
   std::string who = "world";
+  int x;
+  x;
   if (argc > 1) {
     who = argv[1];
   }
