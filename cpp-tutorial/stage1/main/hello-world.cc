@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
   }
   
   int x;
-  x =3;
+  x = 5;
   std::cout << get_greet(who) << std::endl;
   print_localtime();
   return 0;
