@@ -20,6 +20,7 @@ int main(int argc, char** argv) {
   
   int x;
   x =5; // Should be 5, was three
+  x = x++ + x++; // Exiting
   std::cout << get_greet(who) << std::endl;
   print_localtime();
   return 0;
