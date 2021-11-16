@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,6 +34,11 @@ jobs:
       
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.1
+      
+      - name: Setup Bazel
+        # You may pin to the exact commit or the version.
+        # uses: abhinavsingh/setup-bazel@1fe920bf5df3791aab606c06a3608f4bb600c4f2
+        uses: abhinavsingh/setup-bazel@v3
       
       - name: Download TICS wrappers
         uses: carlosperate/download-file-action@v1.0.3
